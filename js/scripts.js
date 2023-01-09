@@ -24,7 +24,7 @@ while (i < foodList.length) {
 
     myInput.type = 'checkbox';
 
-    myLi.append(myInput);
+    myLi.prepend(myInput);
 
     i++;
 
