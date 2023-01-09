@@ -9,6 +9,8 @@ console.log('Lista:', foodList);
 
 const myList = document.getElementById('my_list');
 
+foodList.push('Farina', 'Zucchero', 'Sale', 'Patate', 'Passata di pomodoro');
+
 let i = 0;
 while (i < foodList.length) {
 
@@ -18,7 +20,12 @@ while (i < foodList.length) {
 
     myLi.innerHTML = foodList[i];
 
+    let myInput = document.createElement('input');
+
+    myInput.type = 'checkbox';
+
+    myLi.append(myInput);
+
     i++;
 
 };
-
